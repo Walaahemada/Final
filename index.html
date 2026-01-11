@@ -5,8 +5,12 @@
     <title>Portfolio | walaa</title>
     <link rel="icon" href="img/logo_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        *{
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  
+    
+    <head>
+        <style>
+       *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
@@ -15,16 +19,16 @@
             font-family: "Inter",sans-serif;
         }
         :root{
-            --main_color: #ef525c;
+            --main_color:#0c9540;
             --p_color:#8a8a8a;
-            --bg_color:#1f1f1f;
+            --bg_color:#1b2c48;
             --white_color:#fff;
-            --black_color:#070707;
+            --black_color:#152141;
             --border_color:rgba(255,255,255,0.1);
 
         }
         body{
-            background: #131313;
+            background: #152141f6;
         }
         .container{
             width: 80%;
@@ -760,11 +764,17 @@
         .btn_no_bg:hover{
             color: var(--main_color)
         }
-        
 
     </style>
-</head>
-<body>
+        
+           </head>
+          <body>
+    
+    
+
+
+    
+
 
     <div class="bg-lines">
         <span></span>
@@ -794,7 +804,7 @@
         </div>
         <div class="icons">
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/walaa-hemada/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <spspan class="icon" onclick="open_close()"><i class="fa-solid fa-bars"></i></spspan>
         </div>
@@ -803,123 +813,172 @@
 
   <div class="hero" id="home">
     <div class="container">
-        <div class="div_text">
-            <h4>Hello, i'm</h4>
-            <h1><span>Walaa H.</span></h1>
-            <h2>Web Devloper </h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia harum vitae necessitatibus, excepturi quam blanditiis culpa consectetur numquam non nemo odio laboriosam exercitationem saepe veniam, laborum ullam architecto? Magnam, odio.</p>
-            <div class="btns">
-                <a href="#" class="btn">hire me</a>
-                <a href="#" class="btn_no_bg" download>Download Resume</a>
-            </div>
+      <div class="div_text">
+        <h4>Hello, I'm</h4>
+        <h1><span>Walaa H.</span></h1>
+        <h2>Front-End Developer</h2>
+        <p>
+          I’m a passionate Web Developer who learns quickly and adapts to new challenges.
+          I enjoy turning ideas into practical, user-friendly digital products and continuously
+          improving my skills through real projects.
+        </p>
+        <div class="btns">
+          <a href="#" class="btn">Hire Me</a>
+          <!-- <a href="Portfolio New 1/cv/Hiba_Frontend_Developer_CV.pdf" download class="btn_no_bg">Download Resume</a> -->
         </div>
-
-        <div class="div_img">
-            <img class="person" src="Portfolio New 1/img/home.png" alt="">
-            <img class="bg_img" src="Portfolio New 1/img/bg_img_home .png" alt="">
-
-        </div>
+      </div>
+  
+      <div class="div_img">
+        <img class="person" src="Portfolio New 1/img/home.png" alt="">
+        <img class="bg_img" src="Portfolio New 1/img/bg_img_home .png" alt="">
+      </div>
     </div>
   </div>
+  
 
   <section class="about" id="about">
     <div class="container">
-        <div class="div_text">
-        <h5>about me</h5>
-        <h2><span>I'm a Devloper </span></h2>
-        <h4> a  Front-End Devloper Application</h4>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quo minus nostrum similique omnis vitae saepe aspernatur nulla consectetur. Atque sunt quae accusantium. Esse corporis velit sunt necessitatibus? Modi, voluptas?</p>
+      <div class="div_text">
+        <h5>About Me</h5>
+        <h2><span>I'm a Front-End Developer</span></h2>
+        <h4>Front-End Web Application Developer</h4>
+  
+        <p>
+          I am a Front-End Developer with practical experience in React and UI/UX design.
+          I have successfully worked on multiple training projects, including web applications,
+          UX/UI designs, and interactive tools. I learn quickly and enjoy taking on new challenges,
+          turning requirements into functional and polished digital products.
+        </p>
+  
         <ul>
-            <li><i class="fa-solid fa-check"></i>Wed Devloper</li>
-            <li><i class="fa-solid fa-check"></i>UI / UX Design</li>
-            <li><i class="fa-solid fa-check"></i>Digital Marketing</li>
-            <li><i class="fa-solid fa-check"></i>Product Design</li>
+          <li><i class="fa-solid fa-check"></i> Front-End Development</li>
+          <li><i class="fa-solid fa-check"></i> UI / UX Design</li>
+          <li><i class="fa-solid fa-check"></i> React Applications</li>
+          <li><i class="fa-solid fa-check"></i> Web Projects</li>
         </ul>
-        
-        <a href="Portfolio New 1/img/logo.png" download class="btn" >Download CV</a>
-        </div>
-        <div class="div_img">
-            <img  src="Portfolio New 1/img/about.jpg" alt="">
-           
-
-        </div>
+  
+        <!-- <a href="Portfolio New 1/cv/Hiba_Frontend_Developer_CV.pdf" download class="btn">
+          Download CV
+        </a> -->
+      </div>
+  
+      <div class="div_img">
+        <img src="Portfolio New 1/img/about.jpg" alt="About Me">
+      </div>
     </div>
   </section>
+  
+  
 
   <section class="services" id="services">
     <div class="container">
-        <div class="top_section">
-            <h2>Our<span>Services</span></h2>
+      <div class="top_section">
+        <h2>Our <span>Services</span></h2>
+      </div>
+  
+      <div class="boxs">
+        <div class="box">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h3>Web Development & Design</h3>
+          <p>
+            I create responsive and user-friendly websites using modern technologies like React,
+            ensuring intuitive navigation and appealing design that enhances user experience.
+          </p>
+          <a href="#" class="btn">Read More</a>
         </div>
-        <div class="boxs">
-            <div class="box">
-                <i class="fa-solid fa-pen-ruler"></i>
-                <h3>Web Design </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis, vero nam maiores facere optio ducimus sint odit assumenda necessitatibus, consectetur omnis molestias, illum quo incidunt dolorum deserunt! Reprehenderit, neque.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="box">
-                <i class="fa-solid fa-rocket"></i>
-                <h3>Fast Performance </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis, vero nam maiores facere optio ducimus sint odit assumenda necessitatibus, consectetur omnis molestias, illum quo incidunt dolorum deserunt! Reprehenderit, neque.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-            <div class="box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Cean Code </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nobis, vero nam maiores facere optio ducimus sint odit assumenda necessitatibus, consectetur omnis molestias, illum quo incidunt dolorum deserunt! Reprehenderit, neque.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+  
+        <div class="box">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Fast & Optimized Performance</h3>
+          <p>
+            I focus on developing fast-loading web applications with clean architecture
+            and optimized code to deliver smooth performance across all devices.
+        
+        </p>
+          <a href="#" class="btn">Read More</a>
         </div>
+  
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Clean & Maintainable Code</h3>
+          <p>
+            I write clean, organized, and maintainable code, following best practices,
+            making it easy to scale projects and collaborate with other developers.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
     </div>
   </section>
+  
 
   <section class="projects" id="projects">
     <div class="container">
-        <div class="top_section">
-            <h2>Explore my Popular<span>Projects</span></h2>
+      <div class="top_section">
+        <h2>Explore my Popular <span>Projects</span></h2>
+      </div>
+  
+      <!-- Project: Gaza Student–Company Connect -->
+<div class="project_box">
+    <img src="Portfolio New 1/img/project1.png" alt="Gaza Student–Company Connect">
+    <div class="text">
+      <h4><span>Web Development</span></h4>
+      <h3><a href="#">Platform connecting Gaza students with companies</a></h3>
+      <p>
+        Developed a React-based web platform connecting university students in Gaza
+        with local and international companies offering internship opportunities.
+        Students can create profiles, browse available internships, and apply easily,
+        while companies can post opportunities and communicate directly with candidates.
+      </p>
+      <a href="https://my-training-project-tan.vercel.app/" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </div>
+  
+  
+      <!-- Project 2: UX/UI Design -->
+      <div class="project_box b">
+        <img src="Portfolio New 1/img/project2.png" alt="UX/UI Design">
+        <div class="text">
+          <h4><span>UX/UI Design</span></h4>
+          <h3><a href="#">Website & Mobile App for Training Center</a></h3>
+          <p>
+            UX/UI design for a training center platform (web & mobile), focusing on course discovery, booking, progress tracking, and smart learning features based on user research.
+          </p>
+          <a href="https://www.figma.com/design/1qTzZQCBFj3wnQfoTtsdpP/Untitled?node-id=0-1&t=LAsOJ61QTTemZxx7-1" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-        <div class="project_box">
-            <img src="Portfolio New 1/img/project1.jpg" alt="">
-            <div class="text">
-                <h4><span>Product Design</span></h4>
-                <h3><a href="#">Website Makeup Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia vel quis adipisci doloribus ad tempore consequatur veniam quibusdam non sequi architecto, eveniet magnam, magni dolore minus dolores. Aspernatur, ex!</p>
-                <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-
-            </div>
+      </div>
+  
+      <!-- Project 3: UX/UI Design -->
+      <div class="project_box">
+        <img src="Portfolio New 1/img/project3.png" alt="UX/UI Design">
+        <div class="text">
+          <h4><span>UX/UI Design</span></h4>
+          <h3><a href="#">Mobile App Prototype</a></h3>
+          <p>
+            Developed a prototype for a mobile application focusing on user-friendly interactions
+            and clean visual design using Figma.
+          </p>
+          <a href="https://www.figma.com/design/eRYWv1lVFKDVwkmTFcPXq7/Untitled?t=ma6oy1I1EatYpv7L-1" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-        <div class="project_box b">
-            <img src="Portfolio New 1/img/project2.jpg" alt="">
-            <div class="text">
-                <h4><span>Product Design</span></h4>
-                <h3><a href="#">Website Makeup Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia vel quis adipisci doloribus ad tempore consequatur veniam quibusdam non sequi architecto, eveniet magnam, magni dolore minus dolores. Aspernatur, ex!</p>
-                <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-
-            </div>
+      </div>
+  
+      <!-- Project 4: Special Project -->
+      <div class="project_box b">
+        <img src="Portfolio New 1/img/project4.png" alt="Special Web Project">
+        <div class="text">
+          <h4><span>Web Development & Design</span></h4>
+          <h3><a href="#">Palestine Awareness Web Page</a></h3>
+          <p>
+            Created a web page highlighting Palestinian culture and history.
+            Combined interactive elements with visual storytelling to educate and engage users.
+          </p>
+          <a href="https://life-window-for-palestine.vercel.app/" target="_blank" class="link"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-        <div class="project_box">
-            <img src="Portfolio New 1/img/project3.jpg" alt="">
-            <div class="text">
-                <h4><span>Product Design</span></h4>
-                <h3><a href="#">Website Makeup Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia vel quis adipisci doloribus ad tempore consequatur veniam quibusdam non sequi architecto, eveniet magnam, magni dolore minus dolores. Aspernatur, ex!</p>
-                <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-            </div>
-        </div>
-        <div class="project_box b">
-            <img src="Portfolio New 1/img/project4.jpg" alt="">
-            <div class="text">
-                <h4><span>Product Design</span></h4>
-                <h3><a href="#">Website Makeup Design</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia vel quis adipisci doloribus ad tempore consequatur veniam quibusdam non sequi architecto, eveniet magnam, magni dolore minus dolores. Aspernatur, ex!</p>
-                <a href="#" class="link"><i class="fa-solid fa-arrow-up"></i></a>
-
-            </div>
-        </div>
+      </div>
+  
     </div>
   </section>
+  
 
   <section class="contact" id="contact">
     <div class="top_section">
@@ -929,25 +988,26 @@
         <div class="s_contact">
             <h2>Follow Me</h2>
             <div class="links">
-                <a href="mailto:wala@gmail.com"><i class="fa-solid fa-envelope"></i>wala@gmail.com</a>
-                <a href="tel:+0596588333"><i class="fa-solid fa-phone"></i>0598673202</a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a>
-                <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
-                <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="mailto:walahemada@gmail.com"><i class="fa-solid fa-envelope"></i> walahemada@gmail.com</a>
+                <a href="tel:+0598548404"><i class="fa-solid fa-phone"></i> 0598548404</a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i> facebook</a>
+                <a href="https://www.linkedin.com/in/walaa-hemada/" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i> instagram</a>
             </div>
         </div>
-        <form action="">
+        <form id="contactForm" action="#" method="post">
             <div class="inpts_form">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Mobile Number">
-                <input type="text" placeholder="Subject">
-                <textarea name="" id="" rows="10" placeholder="Your Messsge"></textarea>
+                <input type="text" name="full_name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="mobile" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" rows="10" placeholder="Your Message"></textarea>                
             </div>
-            <button class="btn">Send Messsge</button>
+            <button  type="submit" class="btn">Send Messsge</button>
         </form>
     </div>
   </section>
   <script src="main.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
